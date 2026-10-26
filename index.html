@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#180923" />
+  <title>Diwali Spin & Win 2026 | AL IQRAH TECH ACADEMY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="AL IQRAH TECH ACADEMY home">
+      <span class="brand-mark">A </span><span>AL IQRAH TECH ACADEMY</span>
+    </a>
+    <nav><a href="#offers">Offers</a><a class="nav-cta" href="#play">Spin &amp; Win</a></nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="campaign-pill"><span></span><strong id="campaign-status">OPENS 25 OCTOBER 2026</strong></div>
+        <p class="eyebrow">AL IQRAH TECH ACADEMY</p>
+        <h1><span>Diwali</span><br>Spin &amp; Win 2026</h1>
+        <p class="tagline">Celebrate Diwali. Unlock Your Next Skill.</p>
+        <p class="intro">Spin for exclusive course offers, exciting workshops, and special learning opportunities.</p>
+        <p class="dates">25 October – 6 November 2026</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#play">SPIN &amp; WIN NOW</a>
+          <a class="button button-outline" href="#offers">EXPLORE OUR OFFERS</a>
+        </div>
+        <p class="small-note">One eligible spin per participant. Terms and conditions apply.</p>
+      </div>
+
+      <div class="wheel-wrap" id="play">
+        <div class="pointer" aria-hidden="true"></div>
+        <div class="wheel-shell"><canvas id="wheel" width="720" height="720" aria-label="Prize wheel with eight offers"></canvas>
+          <div class="wheel-center">AIQ</div>
+        </div>
+        <p class="wheel-caption">Your next skill could start with one spin.</p>
+      </div>
+    </section>
+
+    <section class="play-card" id="registration">
+      <div>
+        <p class="eyebrow">YOUR DIWALI REWARD</p>
+        <h2>Ready to try your luck?</h2>
+        <p>Enter your details to take part in the campaign. Your offer and coupon will appear after a successful spin.</p>
+      </div>
+      <form id="spin-form">
+        <label>Full name<input id="full-name" name="name" autocomplete="name" required maxlength="100" placeholder="Enter your full name"></label>
+        <label>Mobile number<input id="phone" name="phone" inputmode="numeric" autocomplete="tel" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit Indian mobile number"></label>
+        <label>Course interest
+          <select id="course" name="course" required>
+            <option value="">Choose a course</option>
+            <option>Graphic Design</option><option>UI/UX Design</option><option>Web Design</option>
+            <option>Web Development</option><option>Digital Marketing</option><option>Social Media Marketing</option>
+            <option>AI Tools &amp; Prompt Engineering</option><option>Video Editing</option><option>Other Courses</option>
+          </select>
+        </label>
+        <label class="check"><input id="terms" type="checkbox" required><span>I agree to the campaign terms and privacy notice.</span></label>
+        <label class="check"><input id="marketing" type="checkbox"><span>I'd like to receive future course updates (optional).</span></label>
+        <button class="button button-gold full" id="spin-button" type="submit">REGISTER &amp; SPIN</button>
+        <p class="form-note" id="form-note" role="status">Demo mode: results are generated in this browser only. Connect the secure backend before publishing.</p>
+      </form>
+    </section>
+
+    <section class="offers-section" id="offers">
+      <p class="eyebrow">SPECIAL CAMPAIGN REWARDS</p>
+      <h2>What could you unlock?</h2>
+      <div class="offer-grid">
+        <article class="offer-card"><span>01</span><h3>Course Discounts</h3><p>Special savings on eligible courses.</p></article>
+        <article class="offer-card"><span>02</span><h3>Free Workshops</h3><p>Explore AI tools and Canva basics.</p></article>
+        <article class="offer-card"><span>03</span><h3>Course Bundles</h3><p>Ask us about limited-period learning bundles.</p></article>
+        <article class="offer-card"><span>04</span><h3>Career Guidance</h3><p>Get guidance to plan your next learning step.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 AL IQRAH TECH ACADEMY</span><span>7418093446 · 9025545372</span></footer>
+
+  <div class="modal-backdrop" id="result-modal" hidden>
+    <section class="result-modal" role="dialog" aria-modal="true" aria-labelledby="result-title">
+      <button class="modal-close" id="close-modal" aria-label="Close result">×</button>
+      <div class="confetti" aria-hidden="true">✦ ✧ ✦</div>
+      <p class="eyebrow">YOUR DIWALI REWARD</p>
+      <h2 id="result-title">Congratulations!</h2>
+      <p class="result-label">You've unlocked</p>
+      <h3 id="prize-name">Your special offer</h3>
+      <p class="coupon-line">Coupon code <strong id="coupon-code"></strong></p>
+      <p class="result-terms" id="result-terms">Please contact the academy to confirm eligibility and redemption.</p>
+      <a class="button button-gold full" id="claim-button" href="#" target="_blank" rel="noopener">CLAIM MY OFFER ON WHATSAPP</a>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

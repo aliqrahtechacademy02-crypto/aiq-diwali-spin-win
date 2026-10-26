@@ -1,0 +1,47 @@
+:root{--bg:#180923;--bg2:#230d35;--gold:#f4b83f;--gold2:#ffda7c;--cream:#fff5e5;--muted:#c7b9d0;--line:rgba(255,202,91,.28);--pink:#d33c91;--green:#138b63;--blue:#244b9b;--red:#cb2635;--orange:#f47716;--purple:#633aa0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 72% 22%,#35134b 0,transparent 38%),radial-gradient(circle at 15% 20%,rgba(255,190,64,.08) 1px,transparent 2px),var(--bg);background-size:auto,28px 28px,auto;color:var(--cream);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}.topbar{height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 4.5%;border-bottom:1px solid rgba(255,255,255,.07);background:rgba(20,7,31,.72);position:sticky;top:0;z-index:5;backdrop-filter:blur(14px)}.brand{display:flex;align-items:center;gap:12px;font-family:"Playfair Display",serif;letter-spacing:1.5px;color:var(--gold2);font-size:clamp(12px,1.5vw,18px)}.brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#ffdb7c,#d78a13);color:#2a1033;font-size:23px;box-shadow:0 0 22px #e6a12b33}nav{display:flex;align-items:center;gap:26px;color:var(--muted);font-size:14px}nav a:hover{color:var(--gold2)}.nav-cta{background:linear-gradient(120deg,var(--gold2),#d78a13);color:#281031;padding:12px 22px;border-radius:28px;font-weight:700}.hero{min-height:610px;max-width:1440px;margin:auto;padding:72px 5% 60px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:42px;overflow:hidden}.campaign-pill{display:inline-flex;align-items:center;gap:9px;border:1px solid #9a6a2c;border-radius:30px;padding:8px 17px;font-size:12px;letter-spacing:.5px;color:var(--gold2)}.campaign-pill span{width:8px;height:8px;border-radius:50%;background:#f59b18}.eyebrow{font-size:12px;letter-spacing:4px;color:var(--gold);font-weight:700;margin:28px 0 14px}.hero h1{font:600 clamp(42px,5.5vw,72px)/1.08 "Playfair Display",serif;margin:0;letter-spacing:-1.4px}.hero h1 span{color:var(--gold2)}.tagline{font:italic 22px "Playfair Display",serif;color:var(--gold2);margin:24px 0 14px}.intro{color:#c9bdd0;line-height:1.7;max-width:490px;font-size:15px}.dates{color:#ffad19;font-weight:700;font-size:14px;margin:20px 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.button{border:0;display:inline-flex;align-items:center;justify-content:center;text-align:center;border-radius:40px;padding:16px 24px;font:700 14px "DM Sans",sans-serif;cursor:pointer;transition:transform .2s,filter .2s}.button:hover{transform:translateY(-2px);filter:brightness(1.07)}.button-gold{background:linear-gradient(120deg,#ffda7c,#d88b18);color:#2a1033;box-shadow:0 8px 25px #d88b1828}.button-outline{border:1px solid #a77a39;color:var(--gold2);background:#1a0925}.small-note{font-size:11px;color:#a99bb5;margin-top:18px}.wheel-wrap{display:flex;flex-direction:column;align-items:center;position:relative;padding-top:20px}.wheel-shell{width:min(100%,480px);aspect-ratio:1;border:7px solid #f9c451;border-radius:50%;padding:5px;position:relative;background:#f9c451;box-shadow:0 0 0 2px #5c361c,0 0 45px #f7b53233}.wheel-shell canvas{width:100%;height:100%;display:block;border-radius:50%}.pointer{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:17px solid transparent;border-right:17px solid transparent;border-top:43px solid #ffcf56;z-index:2;filter:drop-shadow(0 3px 1px #1a0b20)}.wheel-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:19%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:#1d0b2c;border:5px solid #f7bf47;color:var(--gold2);font:700 clamp(12px,1.5vw,19px) "Playfair Display",serif;box-shadow:0 0 0 2px #32133e}.wheel-caption{color:#bca9c8;font:italic 15px "Playfair Display",serif}.play-card{max-width:1100px;margin:30px auto 100px;padding:42px;display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,#2a103b,#1c0a2a);box-shadow:0 20px 70px #0002}.play-card h2,.offers-section h2{font:600 clamp(28px,3vw,40px) "Playfair Display",serif;margin:0 0 14px}.play-card p{color:var(--muted);line-height:1.7}.play-card .eyebrow,.offers-section .eyebrow{margin-top:0}form{display:grid;gap:15px}form label:not(.check){display:grid;gap:8px;font-size:13px;color:#e8dcef}input,select{width:100%;background:#170821;border:1px solid #654575;border-radius:10px;padding:13px 14px;color:#fff;font:14px "DM Sans",sans-serif;outline:none}input:focus,select:focus{border-color:var(--gold)}select option{background:#1b0b29}.check{display:flex;align-items:flex-start;gap:9px;color:#c9bdd0;font-size:12px;line-height:1.5}.check input{width:16px;height:16px;margin:1px 0;accent-color:var(--gold);flex-shrink:0}.full{width:100%}.form-note{font-size:11px!important;margin:0}.offers-section{max-width:1100px;margin:0 auto 90px;padding:0 24px;text-align:center}.offer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:30px;text-align:left}.offer-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:#ffffff06}.offer-card span{color:var(--gold);font-weight:700;font-size:12px}.offer-card h3{font:600 20px "Playfair Display",serif;margin:18px 0 8px}.offer-card p{color:var(--muted);font-size:13px;line-height:1.6;margin:0}footer{border-top:1px solid #ffffff15;display:flex;justify-content:space-between;gap:15px;padding:24px 5%;color:#a99bb5;font-size:12px}.modal-backdrop{position:fixed;inset:0;background:#0b0410dd;display:grid;place-items:center;padding:20px;z-index:20;backdrop-filter:blur(8px)}.modal-backdrop[hidden]{display:none}.result-modal{width:min(100%,440px);position:relative;padding:38px 30px 30px;text-align:center;border:1px solid #d9a43c;border-radius:24px;background:radial-gradient(circle at top,#4b205b,#1d0a2a 65%);box-shadow:0 20px 80px #0008}.modal-close{position:absolute;right:16px;top:12px;border:0;background:none;color:#fff;font-size:30px;cursor:pointer}.confetti{font-size:30px;color:var(--gold);letter-spacing:8px}.result-modal .eyebrow{margin:15px 0}.result-modal h2{font:600 35px "Playfair Display",serif;margin:0 0 18px}.result-label{color:var(--muted);margin-bottom:5px}.result-modal h3{color:var(--gold2);font:600 25px "Playfair Display",serif;margin:0 0 20px}.coupon-line{background:#12061b;border:1px dashed #d9a43c;border-radius:10px;padding:13px;color:#c9bdd0;font-size:13px}.coupon-line strong{color:var(--gold2);display:block;font-size:17px;letter-spacing:1px;margin-top:5px}.result-terms{color:#c9bdd0;font-size:12px;line-height:1.6;margin:16px 0 22px}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:45px;gap:30px}.hero-copy{text-align:center}.intro{margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}.wheel-wrap{max-width:520px;margin:auto;width:100%}.wheel-shell{width:min(88vw,440px)}.pointer{top:6px}.play-card{margin:20px 18px 70px;grid-template-columns:1fr;padding:28px;gap:20px}.offer-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.topbar{padding:0 14px;height:60px}.brand{font-size:10px;letter-spacing:.7px;gap:7px}.brand-mark{width:32px;height:32px;font-size:19px}nav{gap:12px;font-size:12px}nav a:first-child{display:none}.nav-cta{padding:10px 14px}.hero{padding:36px 18px 40px}.hero h1{font-size:43px}.tagline{font-size:19px}.intro{font-size:14px}.campaign-pill{font-size:10px}.wheel-shell{width:min(90vw,370px);border-width:5px;padding:4px}.pointer{border-left-width:13px;border-right-width:13px;border-top-width:34px;top:9px}.play-card{padding:23px 18px}.offer-grid{gap:10px}.offer-card{padding:17px}.offer-card h3{font-size:17px}footer{flex-direction:column;text-align:center}}.academy-logo {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+/* Academy logo in the header */
+.academy-logo {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Logo in the center of the prize wheel */
+.wheel-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wheel-center img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  display: block;
+}
+/* Academy logo in the header */
+.academy-logo {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Academy logo in the wheel center */
+.wheel-center img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  display: block;
+}
